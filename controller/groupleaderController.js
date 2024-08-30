@@ -1,4 +1,4 @@
-const Groupleader = require('../models/Groupleader');
+const Groupleader = require('../models/groupleaderModel');
 
 const getGroupleaders = async (req, res) => {
     try {

@@ -1,5 +1,6 @@
 // controllers/studentController.js
-const Student = require('../models/Student'); // Adjust this based on the correct model
+const Student = require('../models/studentModel');
+ // Adjust this based on the correct model
 
 // Controller functions
 const getStudents = async (req, res) => {

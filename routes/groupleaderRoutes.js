@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { getGroupleaders, getGroupleader, postGroupleader, putGroupleader, deleteGroupleader } = require('../controllers/groupleaderController');
+const { getGroupleaders, getGroupleader, postGroupleader, putGroupleader, deleteGroupleader } = require('../controller/groupleaderController');
 
 router.get('/', getGroupleaders);
 router.get('/:id', getGroupleader);

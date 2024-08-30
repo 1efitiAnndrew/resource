@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { getLecturers, getLecturer, postLecturer, putLecturer, deleteLecturer } = require('../controllers/lecturerController');
+const { getLecturers, getLecturer, postLecturer, putLecturer, deleteLecturer } = require('../controller/lecturerController');
 
 router.get('/', getLecturers);
 router.get('/:id', getLecturer);

@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { getPastpapers, getPastpaper, postPastpaper, putPastpaper, deletePastpaper } = require('../controllers/pastpaperController');
+const { getPastpapers, getPastpaper, postPastpaper, putPastpaper, deletePastpaper } = require('../controller/pastpaperController');
 
 router.get('/', getPastpapers);
 router.get('/:id', getPastpaper);

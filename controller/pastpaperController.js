@@ -1,4 +1,4 @@
-const Pastpaper = require('../models/Pastpaper');
+const Pastpaper = require('../models/pastpaperModel');
 
 const getPastpapers = async (req, res) => {
     try {

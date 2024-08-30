@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { getAssignments, getAssignment, postAssignment, putAssignment, deleteAssignment } = require('../controllers/assignmentController');
+const { getAssignments, getAssignment, postAssignment, putAssignment, deleteAssignment } = require('../controller/assignmentController');
 
 router.get('/', getAssignments);
 router.get('/:id', getAssignment);

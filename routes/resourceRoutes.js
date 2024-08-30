@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const { getResources, getResource, postResource, putResource, deleteResource } = require('../controllers/resourceController');
+const { getResources, getResource, postResource, putResource, deleteResource } = require('../controller/resourceController');
 
 router.get('/', getResources);
 router.get('/:id', getResource);

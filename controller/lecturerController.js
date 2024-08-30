@@ -1,4 +1,4 @@
-const Lecturer = require('../models/Lecturer');
+const Lecturer = require('../models/lecturerModel');
 
 const getLecturers = async (req, res) => {
     try {

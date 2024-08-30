@@ -34,19 +34,13 @@ app.use('/api/notes', noteRoutes);
 app.use('/api/assignments', assignmentRoutes);
 app.use('/api/groupleaders', groupleaderRoutes);
 
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
-});
-
-//mongoose.connect(MONGO_URL, { useNewUrlParser: true, useUnifiedTopology: true })
-    //.then(() => console.log('Connected to MongoDB'))
-    //.catch(err => console.error('Failed to connect to MongoDB', err));
 
 mongoose.connect(MONGO_URL)
 .then(() => {
     console.log('connected to MongoDB')
-    app.listen(PORT, () =>{console.log('Andrew is coding at port ${PORT}')})
+    app.listen(PORT, () =>{console.log(`Andrew is coding at port ${PORT}`)})
     
 }).catch((error) => {
     console.log(error)
 });
+
