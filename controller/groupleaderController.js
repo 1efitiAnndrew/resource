@@ -2,7 +2,7 @@ const Groupleader = require('../models/Groupleader');
 
 const getGroupleaders = async (req, res) => {
     try {
-        const groupleaders = await Groupleader.find().populate(['student_id', 'assign_id']);
+        const groupleaders = await Groupleader.find().populate('student_id', 'assign_id');
         res.status(200).json(groupleaders);
     } catch (error) {
         res.status(500).json({ message: error.message });
